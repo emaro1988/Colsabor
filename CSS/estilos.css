@@ -52,7 +52,8 @@
     height: 7vh;
     background-color: white;
     border: solid white;
-  }
+    transform: translate(0, -30px);
+      }
   
   nav a {
     text-decoration: none;
@@ -83,7 +84,8 @@
     background-color: white;
     padding: 1vh 0.5vw 1vh 0.5vw;
   }
-  
+
+    
   .nav-a:hover {
     color: rgb(45, 64, 89);
     padding: 1vh 0.5vw 1vh 0.5vw;
@@ -100,7 +102,15 @@
     background-color: white;
     border-radius: 45%;
     order: -1;
-  }
+    transition: all 1s;
+    }
+
+    .header__img:hover{
+      width: 10vw;
+      height: 17vh;
+      }
+  
+ 
   /*la información de contacto*/
   .header__inf {
     width: 30.4vw;
@@ -114,7 +124,7 @@
   }
   /*Íconos de redes sociales*/
   .icono-flex {
-    width: 21vh;
+    width: 26vh;
     height: 7vh;
     display: flex;
     flex-direction: row;
@@ -123,7 +133,8 @@
     align-items: center;
     justify-content: space-between;
     order: 2;
-  }
+    transform:translate(0,-3px)
+    }
   
   .header__icono1 {
     width: 6vh;
@@ -131,21 +142,44 @@
     padding: 1vh;
     background-color: white;
     border-radius: 10px;
+    transform:scale(1.3,1.3);
+    transition: width 1s, height 1s;
   }
+
+  .header__icono1:hover {
+    height: 5vh;
+    width: 5vh;
+    }
+
   .header__icono2 {
     width: 6vh;
     height: 6vh;
     padding: 1vh;
     background-color: white;
     border-radius: 10px;
+    transform:scale(1.3,1.3);
+    transition: width 1s, height 1s;
   }
+
+  .header__icono2:hover {
+    height: 5vh;
+    width: 5vh;
+    }
+
   .header__icono3 {
     width: 6vh;
     height: 6vh;
     padding: 1vh;
     background-color: white;
     border-radius: 10px;
+    transform:scale(1.3,1.3);
+    transition: width 1s, height 1s;
   }
+
+  .header__icono3:hover {
+    height: 5vh;
+    width: 5vh;
+    }
   
   /*Inicia el Footer*/
   
@@ -176,18 +210,58 @@
   }
   
   .main__frase1 {
-    background-color: rgba(255, 255, 255, 0.582);
+    background-image: linear-gradient(to top,white,lightblue);
     text-align: center;
     font-size: 5vh;
     color: rgb(161, 18, 18);
     border-radius: 20px;
+    animation-name: aparecerfrase1;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay:0.5s;
   }
+
+  @keyframes aparecerfrase1 {
+    0%{transform:translatex(-100vw);}
+    10%{transform:translatex(-90vw);}
+    20%{transform:translatex(-80vw);}
+    30%{transform:translatex(-70vw);}
+    40%{transform:translatex(-60vw);}
+    50%{transform:translatex(-50vw);}
+    60%{transform:translatex(-40vw);}
+    70%{transform:translatex(-30vw);}
+    80%{transform:translatex(-20vw);}
+    90%{transform:translatex(-10vw);}
+    100%{transform:translatex(0vw);}
+  }
+
+  
   .main__frase2 {
-    background-color: rgba(255, 255, 255, 0.582);
-    font-size: 5vh;
+    background-image: linear-gradient(to bottom, white,lightblue);
+    font-size: 4vh;
     text-align: center;
     color: rgb(9, 67, 145);
     border-radius: 20px;
+    animation-name: aparecerfrase2;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay:0.5s;
+  }
+
+  @keyframes aparecerfrase2 {
+    0%{transform:translatex(100vw);}
+    10%{transform:translatex(90vw);}
+    20%{transform:translatex(80vw);}
+    30%{transform:translatex(70vw);}
+    40%{transform:translatex(60vw);}
+    50%{transform:translatex(50vw);}
+    60%{transform:translatex(40vw);}
+    70%{transform:translatex(30vw);}
+    80%{transform:translatex(20vw);}
+    90%{transform:translatex(10vw);}
+    100%{transform:translatex(0vw);}
   }
   
   /*MAIN DE NOSOTROS*/
@@ -207,11 +281,31 @@
   }
   
   .mainNos__titulo {
+    position:relative;
     font-weight: bolder;
     font-size: 4vh;
     color: rgb(161, 18, 18);
     padding-bottom: 10vh;
+    animation-duration: 1s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
   }
+
+  @keyframes aparecer{
+    0%{transform:translatex(-50vw)}
+    10%{transform:translatex(-45vw)}
+    20%{transform:translatex(-40vw)}
+    30%{transform:translatex(-35vw)}
+    40%{transform:translatex(-30vw)}
+    50%{transform:translatex(-25vw)}
+    60%{transform:translatex(-20vw)}
+    70%{transform:translatex(-15vw)}
+    80%{transform:translatex(-10vw)}
+    90%{transform:translatex(-5vw)}
+    100%{transform:translatex(0vw)}
+  }
+
+  
   
   .mainNos__texto {
     font-weight: bold;
@@ -237,11 +331,26 @@
     font-weight: bolder;
     font-size: 50px;
     color: rgb(161, 18, 18);
-    text-align: center;
-    position: absolute;
+    position: relative;
     margin: 50px;
     padding: 10px;
-    left: 35%;
+    animation-duration: 1s;
+    animation-name: aparecer1;
+    animation-iteration-count: 1;
+    }
+
+  @keyframes aparecer1 {
+    0%{transform:translatex(-50vw);}
+    10%{transform:translatex(-45vw);}
+    20%{transform:translatex(-40vw);}
+    30%{transform:translatex(-35vw);}
+    40%{transform:translatex(-30vw);}
+    50%{transform:translatex(-25vw);}
+    60%{transform:translatex(-20vw);}
+    70%{transform:translatex(-15vw);}
+    80%{transform:translatex(-10vw);}
+    90%{transform:translatex(-5vw);}
+    100%{transform:translatex(-0vw);}
   }
   
   .mainProd__img1 {
@@ -382,13 +491,28 @@
     font-weight: bolder;
     font-size: 25px;
     color: rgb(161, 18, 18);
-    text-align: center;
-    position: absolute;
     margin: 30px;
     padding: 10px;
-    left: 25%;
+    animation-name: aparecer2;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    transform:translatex(25vw);
+    }
+
+  @keyframes aparecer2 {
+    0%{transform:translatex(-50vw);}
+    10%{transform:translatex(-45vw);}
+    20%{transform:translatex(-40vw);}
+    30%{transform:translatex(-35vw);}
+    40%{transform:translatex(-30vw);}
+    50%{transform:translatex(-25vw);}
+    60%{transform:translatex(-20vw);}
+    70%{transform:translatex(-15vw);}
+    80%{transform:translatex(-10vw);}
+    90%{transform:translatex(-5vw);}
+    100%{transform:translatex(0vw);}
   }
-  
+
   .mainServ__subtitulo1 {
     width: 31%;
     height: 8%;
@@ -489,7 +613,9 @@
     width: 100vw;
     background-image: url(../imagenes/candies.jpg);
     background-size: cover;
-  }
+    }
+
+  
   
   .mainCon__titulo {
     display: inline-block;
@@ -501,6 +627,24 @@
     margin: 30px;
     padding: 10px;
     left: 2%;
+    animation-name: aparecer3;
+    animation-iteration-count: 1s;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+  }
+
+  @keyframes aparecer3 {
+    0%{transform:translatex(-50vw);}
+    10%{transform:translatex(-45vw);}
+    20%{transform:translatex(-40vw);}
+    30%{transform:translatex(-35vw);}
+    40%{transform:translatex(-30vw);}
+    50%{transform:translatex(-25vw);}
+    60%{transform:translatex(-20vw);}
+    70%{transform:translatex(-15vw);}
+    80%{transform:translatex(-10vw);}
+    90%{transform:translatex(-5vw);}
+    100%{transform:translatex(0vw);}
   }
   
   .mainCon__form {
