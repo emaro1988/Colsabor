@@ -48,7 +48,7 @@
   
   /*El navegador*/
   .header__nav {
-    width: 53vw;
+    width: 55vw;
     height: 7vh;
     background-color: white;
     border: solid white;
@@ -61,6 +61,7 @@
     font-size: 3.2vh;
     font-weight: bolder;
     color: white;
+    padding: 1.5vh auto 1.5vh auto;
   }
   
   .nav-flex {
@@ -74,21 +75,22 @@
   
   .nav-li {
     height: 6vh;
-    width: 10.2vw;
+    width: 10.5vw;
     background-color: rgb(45, 64, 89);
-    text-align: center;
     padding: 1vh 0.5vw 1vh 0.5vw;
+    text-align: center;
   }
   
   .nav-li:hover {
     background-color: white;
     padding: 1vh 0.5vw 1vh 0.5vw;
+    text-align: center;
   }
 
     
   .nav-a:hover {
     color: rgb(45, 64, 89);
-    padding: 1vh 0.5vw 1vh 0.5vw;
+    padding: 1.5vh auto 1.5vh auto;
   }
   
   .colorPrincipal {
