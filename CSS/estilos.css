@@ -54,18 +54,19 @@ body {
      color: white;
      text-align: center;
      }
+
 /*Parte General del Main*/
    .main{
-    background-color: white;
+    background-image: linear-gradient(to top,lightgrey, white);
     }
 /* Desarrollo del main de Inicio */
    .main__index{
        background-image:url(../imagenes/cakewall.jpg);
        background-size: cover;
-  background-repeat: no-repeat;
-  text-align: center;
-  height: 65vh;
-    }
+       background-repeat: no-repeat;
+       text-align: center;
+       height: 65vh;
+      }
 
    .main__frase1 {
     background-color: rgba(255, 255, 255, 0.582);
@@ -75,6 +76,19 @@ body {
     border-radius: 20px;
     margin: 30px 30px 30px 30px;
     margin-bottom: 40px;
+    animation-name:entrada1;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-delay:1s;
+  }
+
+  @keyframes entrada1 {
+    0%{transform:translateX(-100%)}
+    25%{transform:translateX(-75%)}
+    50%{transform:translateX(-50%)}
+    75%{transform:translateX(-25%)}
+    100%{transform:translateX(0%)}
   }
   .main__frase2 {
     background-color: rgba(255, 255, 255, 0.582);
@@ -83,6 +97,19 @@ body {
     color: rgb(9, 67, 145);
     border-radius: 20px;
     margin: 30px 30px 10px 30px;
+    animation-name:entrada2;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-delay:1s;
+  }
+
+  @keyframes entrada2 {
+    0%{transform:translateX(100%)}
+    25%{transform:translateX(75%)}
+    50%{transform:translateX(50%)}
+    75%{transform:translateX(25%)}
+    100%{transform:translateX(0%)}
   }
 
   /* Desarrollo del Main de Nosotros */
@@ -92,8 +119,22 @@ body {
     font-size: 8vh;
     color: rgb(161, 18, 18);
     padding: 20px 20px 20px;
+    animation-name:entrada3;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-delay:1s;
   }
   
+  @keyframes entrada3 {
+    0%{transform:translateX(-100%)}
+    25%{transform:translateX(-75%)}
+    50%{transform:translateX(-50%)}
+    75%{transform:translateX(-25%)}
+    100%{transform:translateX(-0%)}
+  }
+
+
   .mainNos__texto {
     font-weight: bold;
     font-size: 3.5vh;
@@ -114,17 +155,46 @@ body {
   color: rgb(161, 18, 18);
   margin: 50px;
   padding: 10px;
- }
+  animation-name:entrada4;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-delay:1s;
+    }
+
+    @keyframes entrada4 {
+      0%{transform:translateX(-100%)}
+      25%{transform:translateX(-75%)}
+      50%{transform:translateX(-50%)}
+      75%{transform:translateX(-25%)}
+      100%{transform:translateX(-0%)}
+    }
 /* Desarrollo del Main de Servicios */
  .text-justify{
    text-align: justify;
+   font-size: 2.5vh;
+   font-weight: bolder;
  }
  
  .mainServ__titulo {
   font-weight: bolder;
   font-size: 50px;
   color: rgb(161, 18, 18);
-}
+  animation-name:entrada5;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-delay:1s;
+    }
+
+    @keyframes entrada5 {
+      0%{transform:translateX(-100%)}
+      25%{transform:translateX(-75%)}
+      50%{transform:translateX(-50%)}
+      75%{transform:translateX(-25%)}
+      100%{transform:translateX(-0%)}
+    }
+
 .mainServ__subtitulo {
   font-weight: bolder;
   font-size: 25px;
@@ -136,6 +206,19 @@ body {
   color: rgb(161, 18, 18);
   font-size: 50px;
   padding: 10px;
+  animation-name:entrada6;
+  animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-delay:1s;
+}
+
+@keyframes entrada6 {
+  0%{transform:translateX(-100%)}
+  25%{transform:translateX(-75%)}
+  50%{transform:translateX(-50%)}
+  75%{transform:translateX(-25%)}
+  100%{transform:translateX(-0%)}
 }
 
 .bigicon {
@@ -184,7 +267,6 @@ body {
 .main__index{
     height: 70vh;
 }
-}
 
 .mainProd__titulo{
   font-size: 30px;
@@ -197,4 +279,5 @@ body {
 .header{
   font-size: 30px;
   text-align: center;
+}
 }
