@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="imagenes/logotipo.ico" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/estilos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,128 +19,162 @@
     />
     <title>Colsabor</title>
   </head>
-  <!-- Barra de navegación -->
-  <body>
-    <header class="colorPrincipal header-grid">
-      <!-- Información de contacto-->
-      <div id="informacioncontacto" class="header__inf">
-        <h1>Cel:31872915111</h1>
-        <h1>Correo: puntodeventa@colsabor.com.co</h1>
-        <h1>Dirección: Cra 45A #67B-113 Itagüí, Antioquia. Colombia.</h1>
+  <style>
+    .row > .header__img {
+      margin: 10px 0;
+      padding: 1px;
+      font-family: "Rubik";
+    }
+  </style>
+
+<body>
+  <div class="container-fluid body">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12 text-center">
+        <img class="header__img"
+          src="imagenes/logotipo.png"
+          alt="logotipo-colsabor"
+          width="45%"
+        />
       </div>
-      <!-- iconos redes sociales -->
-      <div id="iconosredes" class="icono-flex">
-        <a href="https://wa.me/573182915111"
-          ><img
-            class="header__icono1"
-            src="imagenes/whatsap.png"
-            alt="whatsappicon"
-        /></a>
-        <a href="https://www.facebook.com/colsaborsas"
-          ><img
-            class="header__icono2"
-            src="imagenes/facebook.png"
-            alt="facebookicon"
-        /></a>
-        <a href="https://www.instagram.com/colsabor/"
-          ><img
-            class="header__icono3"
-            src="imagenes/instagram.png"
-            alt="instagramicon"
-        /></a>
+      <div class="col-lg-5 col-md-5 col-sm-12">
+        <h6 class="header__inf">Cel:31872915111</h6>
+        <h6 class="header__inf">Correo: puntodeventa@colsabor.com.co</h6>
+        <h6 class="header__inf">
+          Dirección: Cra 45A #67B-113 Itagüí, Antioquia. Colombia.
+        </h6>
       </div>
-      <!-- Menú de navegación -->
-      <div id="navegador" class="header__nav">
-        <nav class="nav-flex">
-          <div class="nav-li">
-            <a class="nav-a" href="index.html">Inicio</a>
-          </div>
-
-          <div class="nav-li">
-            <a class="nav-a" href="nosotros.html">Nosotros</a>
-          </div>
-
-          <div class="nav-li">
-            <a class="nav-a" href="productos.html">Productos</a>
-          </div>
-
-          <div class="nav-li">
-            <a class="nav-a" href="servicios.html">Servicios</a>
-          </div>
-
-          <div class="nav-li">
-            <a class="nav-a" href="contactenos.html">Contáctenos</a>
+      <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+        <div>
+          <a href="https://wa.me/573182915111"
+            ><img
+              class="header__icono1"
+              src="imagenes/whatsap.png"
+              alt="whatsappicon"
+              height="43px"
+              width="43px"
+          /></a>
+          <a href="https://www.facebook.com/colsaborsas"
+            ><img
+              class="header__icono2"
+              src="imagenes/facebook.png"
+              alt="facebookicon"
+              height="43px"
+              width="43px"
+          /></a>
+          <a href="https://www.instagram.com/colsabor/"
+            ><img
+              class="header__icono3"
+              src="imagenes/instagram.png"
+              alt="instagramicon"
+              height="44px"
+              width="44px"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 header__nav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contactenos.html">Contáctenos</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </div>
-      <!-- loogotipo de la empresa -->
-      <div id="logo" class="header__img">
-        <a href="index.html"><img src="imagenes/logotipo.png" alt="logotipo-colsabor" width="99%" /></a>
-      </div>
-    </header>
-    <main class="mainServ">
-      <!-- Título de la Sección -->
-      <div class="mainServ__titulo">
-        <h1>SERVICIOS OFRECIDOS</h1>
-      </div>
-      <!-- Servicios ofrecidos -->
-      <div class="mainServ__subtitulo1">
-        <h2>Creación de Sabores a medida</h2>
-      </div>
-      <div class="mainServ__subtitulo2">
-        <h2>Servicio de Análisis cromatográfico</h2>
-      </div>
-      <div class="mainServ__subtitulo3">
-        <h2>Diseño de Premezclas vitamínicas y minerales</h2>
-      </div>
-      <div class="mainServ__texto1">
-        <p>
-          En nuestro laboratorio podemos producir cualquier sabor o aroma
-          alimenticio usando la tecnología de cromatografía gaseosa. Podemos
-          duplicar sabores de difícil consecución, y producirlo a un costo
-          asequible.
-        </p>
-      </div>
-      <div class="mainServ__texto2">
-        <p>
-          Gracias a esta tecnología se puede hacer el más minucioso control de
-          calidad en materias primas y productos terminados, así como
-          investigación y desarrollo de nuevos productos.
-        </p>
-      </div>
-      <div class="mainServ__texto3">
-        <p>
-          Construcción de premezclas según la tabla nutricional deseada por el
-          cliente, para adicionar a los alimentos.
-        </p>
-      </div>
-      <!-- Imágenes realacionadas a los servicios ofrecidos -->
-      <div class="mainServ__img1">
-        <img
-          src="imagenes/diseñoquimico.jpg"
-          alt="diseño-químico"
-          width="400px"
-          height="400px"
-        />
-      </div>
-      <div class="mainServ__img2">
-        <img src="imagenes/croma4.jpg" alt="cromatógrafo" width="400px" />
-      </div>
-      <div class="mainServ__img3">
-        <img
-          src="imagenes/vitamin.jpg"
-          alt="vitaminas"
-          width="400px"
-          height="400px"
-        />
-      </div>
-    </main>
-    <!-- Pie de Página -->
-    <footer>
-      <div>
-        Copyright © 2021 www.colsabor.com All Rights Reserved. Intellectual
-        Property Rights Policy – info@colsabor.com Itagüí – Colombia
-      </div>
-    </footer>
-  </body>
+    </div>
+    <!-- Desarrollo del Main de Servicios -->
+<main class="main">
+  <div class="row text-center">
+    <div class="col-lg-12 col-md-12 col-sm-12 mainServ__titulo pt-5 b-5">
+      <h1 class="mainServ__titulo">SERVICIOS OFRECIDOS</h1>
+    </div>
+  </div>
+    <div class="row text-center">
+        <div class="col-lg-4 col-md-4 col-sm-12 gy-5 pr-5 p-4">
+          <h2 class="mainServ__subtitulo text-center pb-4">Creación de Sabores a medida</h2>
+          <p class="text-justify">
+            En nuestro laboratorio podemos producir cualquier sabor o aroma alimenticio usando la tecnología de cromatografía gaseosa. Podemos duplicar sabores de difícil connsecución, y producirlo a un costo
+            asequible.
+          </p>
+          <img 
+            src="imagenes/diseñoquimico.jpg"
+            alt="diseño-químico"
+            width="350px"
+            height="350px"
+          />
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 gy-5 p-4">
+          <h2 class="mainServ__subtitulo text-center pb-4">Servicio de Análisis cromatográfico</h2>
+          <p class="text-justify">
+            Gracias a esta tecnología se puede hacer el más minucioso control de
+            calidad en materias primas y productos terminados, así como
+            investigación y desarrollo de nuevos productos.
+          </p>
+           <img src="imagenes/croma4.jpg" alt="cromatógrafo" width="350px" />
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-12 gy-5 p-4">
+          <h2 class="mainServ__subtitulo text-center pb-4">Diseño de Premezclas vitamínicas y minerales</h2>
+          <p class="text-justify pb-5">
+            Construcción de premezclas según la tabla nutricional deseada por el
+            cliente, para adicionar a los alimentos.
+          </p>
+          <img src="imagenes/vitamin.jpg"
+            alt="vitaminas"
+            width="350px"
+            height="350px"
+          />
+        </div>
+    </div>
+  </div>
+</main>
+<!-- Pie de Página -->
+<footer>
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 footer">
+      Copyright © 2021 www.colsabor.com All Rights Reserved. Intellectual
+      Property Rights Policy - info@colsabor.com Itagüí - Colombia
+    </div>
+    </div>
+</footer>
+    <script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+crossorigin="anonymous"
+></script>
+</body>
 </html>
